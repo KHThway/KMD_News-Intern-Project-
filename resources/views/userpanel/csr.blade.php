@@ -30,7 +30,7 @@
                                 @endphp
                                 <option value="" disabled>Years</option>
                                 @foreach ($years as $year)
-                                    <a href="{{ route('userpanel.year'), $year }}">
+                                    <a href="{{ route('userpanel.year', $year) }}">
                                         <option value="{{ $year }}">{{ $year }}</option>
                                     </a>
                                 @endforeach
